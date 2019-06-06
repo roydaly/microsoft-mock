@@ -1,0 +1,102 @@
+body {
+    min-height: 100vh;
+    margin: 0 75px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "header header header header"
+                         "jumbo1 jumbo1 jumbo1 jumbo1"
+                         "foursquares11 foursquares12 foursquares13 foursquares14"
+                         "jumbo2 jumbo2 jumbo2 jumbo2"
+                         "foursquares21 foursquares22 foursquares23 foursquares24"
+                         "jumbo3 jumbo3 jumbo3 jumbo3"
+                         "footer footer footer footer";
+  }
+  header {
+    background-color: red;
+    grid-area: header;
+  }
+  #jumbo1 {
+    background-color: blue;
+    grid-area: jumbo1;
+  }
+  #foursquares11 {
+    background-color: pink;
+    grid-area: foursquares1;
+  }
+  #foursquares12 {
+    background-color: black;
+    grid-area: foursquares11;
+  }
+  #foursquares13 {
+    background-color: lime;
+    grid-area: foursquares11;
+  }
+  #foursquares14 {
+    background-color: brown;
+    grid-area: foursquares11;
+  }
+  #jumbo2 {
+    background-color: purple;
+    grid-area: jumbo2;
+  }
+  #foursquares21 {
+    background-color:green;
+    grid-area: foursquares2;
+  }
+  #foursquares22 {
+    background-color:darkorchid;
+    grid-area: foursquares2;
+  }
+  #foursquares23 {
+    background-color:magenta;
+    grid-area: foursquares2;
+  }
+  #foursquares24 {
+    background-color: midnightblue;
+    grid-area: foursquares2;
+  }
+  #jumbo3 {
+    background-color:yellow;
+    grid-area: jumbo3;
+  }
+  footer {
+    background-color: gray;
+    grid-area: footer;
+  }
+  
+  @media screen and (min-width: 1085px) {
+    body {
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "header header"
+                           "jumbo1 jumbo1"
+                           "foursquares11 foursquares12"
+                           "foursquares13 foursquares14"
+                           "jumbo2 jumbo2"
+                           "foursquares21 foursquares22"
+                           "foursquares23 foursquares24"
+                           "jumbo3 jumbo3"
+                           "footer footer";
+    }
+  }
+
+  @media screen and (min-width: 540px) {
+    body {
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr;
+      grid-template-areas: "header"
+                           "jumbo1"
+                           "foursquares11"
+                           "foursquares12"
+                           "foursquares13"
+                           "foursquares14"
+                           "jumbo2"
+                           "foursquares21"
+                           "foursquares22"
+                           "foursquares23"
+                           "foursquares24"
+                           "jumbo3"
+                           "footer footer";
+    }
+  }
